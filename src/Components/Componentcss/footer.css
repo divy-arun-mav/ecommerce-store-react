@@ -1,0 +1,75 @@
+.footer{
+    margin: 100px 0 0 0;
+    width: 100vw;
+    background-color: rgb(230, 225, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.newsletter-input{
+    border-radius:  20px !important;
+    padding: 10px 10px 10px 10px !important;
+    outline: none;
+    border: none;
+}
+
+.newsletter button {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 30px;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+}
+
+.newsletter button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.contactus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+@media screen and (max-width : 1060px) {
+    .footer{
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width : 620px) {
+    .footer{
+        justify-content: space-around;
+    }
+    .foot{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
