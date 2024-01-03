@@ -10,6 +10,7 @@ export default function Navbar(props) {
    
 
     const handleClick = () => {
+        localStorage.removeItem('user');
         signOut(database).then(val => {
             console.log()
             history('/')
@@ -33,10 +34,10 @@ export default function Navbar(props) {
                 <nav>
                     <h1 className='logo'>Looto</h1>
                     <ul id='nav-list' className='nav-list'>
-                        <li><Link to='/Loot.js'>Home</Link></li>
-                        <li><Link to='/About.js'>About Us</Link></li>
-                        <li><Link to='/Productpage.js'>Our Products</Link></li>
-                        <li><Link to='/Contact.js'>Contact Us</Link></li>
+                        <li><Link to='/authorized/Loot.js'>Home</Link></li>
+                        <li><Link to='/authorized/About.js'>About Us</Link></li>
+                        <li><Link to='/authorized/Productpage.js'>Our Products</Link></li>
+                        <li><Link to='/authorized/Contact.js'>Contact Us</Link></li>
                         <li onClick={handleClick} className='logout-btn'>Log Out</li>
                         <li>
                             <div className="cart">

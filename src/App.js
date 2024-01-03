@@ -11,19 +11,24 @@ import {
 } from "react-router-dom";   
 import Login from './Components/Login';
 import Register from './Components/Register';
+import Authorized from './Components/Authorized';
 
 function App() {
   return (
-    <> 
-    <Router>
+    <>
+      <Router>
         <Routes>
-          <Route path='/Loot.js' element={<Loot />} />
-          <Route path='/About.js' element={<About />} />
-          <Route path='/Productpage.js' element={<Productpage  />} />    
-          <Route path='/Contact.js' element={<Contact />} /> 
-          <Route path='/Register.js' element={<Register />} />   
-          <Route path='/' element={<Login />} />   
-          <Route path='/Register.js' element={<Register />} />   
+          <Route exact path='/Register.js' element={<Register />} />
+          <Route exact path='/' element={<Login />} />
+          <Route exact
+            path='/authorized'
+            element={<Authorized />}
+          >
+            <Route exact path='Loot.js' element={<Loot />} />
+            <Route exact path='About.js' element={<About />} />
+            <Route exact path='Productpage.js' element={<Productpage />} />
+            <Route exact path='Contact.js' element={<Contact />} />
+          </Route>
         </Routes>
       </Router>
     </>
