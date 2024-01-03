@@ -8,7 +8,10 @@ const PrivateRoute = () => {
     if (receivedData) {
         return <Outlet />;
     } else {
-        return <Navigate to="/" replace />;
+        return <>
+            <Navigate to="/" replace />
+            {window.alert("Please Login First")}
+        </>;
     }
 }
 
