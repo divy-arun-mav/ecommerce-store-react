@@ -13,7 +13,6 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Authorized from './Components/Authorized';
 
-
 function App() {
   return (
     <>
