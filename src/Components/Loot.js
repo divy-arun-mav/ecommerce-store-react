@@ -14,7 +14,7 @@ export default function Loot() {
         <img id='img' src={img1} />
         <div className='midtext'>
           <h1 className='main-logo'>Looto</h1>
-          <Link to='/Productpage.js'><p>Shop Now</p></Link>
+          <Link to='/authorized/Productpage.js'><p>Shop Now</p></Link>
         </div>
         <img id='img' src={img2} />
       </div>
@@ -22,7 +22,7 @@ export default function Loot() {
       <h1>Autumn '23</h1>
         <h2>New Season</h2>
         <img src='https://m.media-amazon.com/images/G/31/img21/MA2023/AW23/AF/Women_Men_hero/Men._SX414_QL85_FMpng_.png' />
-        <Link className='link' to="/Productpage.js"><p>Shop Now</p></Link>
+        <Link className='link' to="/authorized/Productpage.js"><p>Shop Now</p></Link>
       </div>
       <Footer />
     </div>
